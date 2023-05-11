@@ -6,6 +6,7 @@ import Product from "./component/Product";
 import Basket from "./component/Basket";
 import Favorite from "./component/Favorite";
 import Footer from "./component/Footer";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
             <Route path="/product" element={ <Product/> }/>
             <Route path="/basket" element={ <Basket/> }/>
             <Route path="/favorite" element={ <Favorite/> }/>
+            <Route path="/details/:id" element={ <ProductDetails/> }/>
+
         </Routes>
         <Footer/>
     </div>
